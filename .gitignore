@@ -1,0 +1,13 @@
+# Служебные файлы Dart
+.dart_tool/
+.packages
+build/
+
+# Настройки IDE
+.idea/
+.vscode/
+*.iml
+
+# Системный мусор
+.DS_Store
+Thumbs.db
