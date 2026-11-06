@@ -11,26 +11,34 @@ void main() {
   int g = a % b; // остаток от деления
   
   //префиксный инкремент
-  int a = 8;
-  int b = ++a;
-  print(a);   // 9
-  print(b);   // 9
+  {  
+    int a = 8;
+    int b = ++a;
+    print(a);   // 9
+    print(b);   // 9
+  }
 
   //постфиксный инкремент
-  int c = 8;
-  int d = c++;
-  print(c);   // 9
-  print(d);   // 8
+  { 
+    int c = 8;
+    int d = c++;
+    print(c);   // 9
+    print(d);   // 8
+  }
 
   //префиксный декремент
-  int e = 8;
-  int f = --e;
-  print(e);   // 7
-  print(f);   // 7
+  { 
+    int e = 8;
+    int f = --e;
+    print(e);   // 7
+    print(f);   // 7
+  }
 
   //постфиксный декремент
-  int g = 8;
-  int h = g--;
-  print(g);   // 7
-  print(h);   // 8
+  {  
+    int g = 8;
+    int h = g--;
+    print(g);   // 7
+    print(h);   // 8
+  }
 }

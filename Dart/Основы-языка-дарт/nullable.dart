@@ -20,7 +20,9 @@ void main() {
   String result = d ?? "Default value"; // если d равно null, присваиваем "Default value"
   print(result); // выводит Default value
 
-  int? a;
-  a ??= 10;
-  print(a);
+  {
+    int? a;
+    a ??= 10;
+    print(a);
+  }
 }
