@@ -45,6 +45,39 @@ void test2(){
   var guest = User.guest();                   // Гость 
 }
 
+//Обязательные и необязательные параметры
+class Person2{
+  String name = "";
+  int age;
+  Person2({required this.name, this.age = 0}); //имя обязательно, возраст нет
+  void display(){
+    print("$name , $age");
+  }
+}
+
+void test3(){
+  Person2 tom = Person2(name: "Том", age: 20);
+  Person2 bob = Person2(name: "Том");
+  tom.display();
+}
+
+//Инициализаторы
+class Person3{
+  String name = "";
+  int age = 0;
+  Person3(String name, int age) : this.name = name, this.age = age{ //Инициализаторы представляют способ инициализации полей класса
+    print("Пользователь создан");
+  }
+  void display(){
+    print("$name , $age");
+  }
+}
+
+void test4(){
+  Person3 tom = Person3("Том", 20);
+  tom.display();
+}
+
 void main(){
-  test1();
+  test4();
 }
